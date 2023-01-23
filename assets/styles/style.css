@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* 
+
+  Style navbar
+
+*/
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.navbar-container .navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  color: black;
+  padding: 4px;
+  text-transform: uppercase;
+}
+.navbar-container ul {
+  display: flex;
+  justify-content: baseline;
+  margin-right: 30px;
+  /* width: 10%; */
+}
+.navbar-container ul li {
+  list-style: none;
+}
+.navbar-container ul li a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 5px;
+  color: black;
+  margin-right: 20px;
+}
+
+.navbar-container .navbar-toggle {
+  display: none;
+}
+
+/* 
+  main-content-container
+
+*/
+#main-content-container {
+  padding: 20px;
+  width: 100%;
+}
+
+/* 
+
+jumbotron
+
+*/
+.jumbotron {
+  background-image: url("../images/cafeku/jumbotron.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+/* 
+
+main-content-about
+
+*/
+
+.main-content_about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.main-content_about .title-cafe h2 {
+  display: block;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 44px;
+  padding: 4px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.main-content_about .title-cafe {
+  max-width: 600px;
+  padding: 5px;
+  margin-bottom: 3rem;
+}
+.main-content_about .title-cafe > p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px;
+}
+.main-content_about .title-cafe > p span {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.main-content_about .title-cafe > p a {
+  color: black;
+  text-decoration: none;
+}
+.main-content_about .title-cafe > p a:hover {
+  transition: all 500ms ease;
+  text-decoration: underline;
+}
+
+.main-content_about .title-cafe-image {
+  max-width: 500px;
+}
+.main-content_about .title-cafe-image img {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.main-content_about .title-cafe-image .title-image-dec {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+
+/* 
+
+  main-content-gallery
+
+*/
+.main-content-gallery {
+  padding-top: 5rem;
+  padding: 10px;
+  background-color: #ddd;
+}
+.main-content_gallery h2 {
+  margin-bottom: 3rem;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+  margin-top: 5rem;
+}
+.container-card-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.favorite-menu-container {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  padding: 40px;
+}
+.favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 5rem;
+}
+.favorite-container .favorite-food-content {
+  margin-bottom: 20px;
+}
+.favorite-container .favorite-food-content ul li {
+  list-style: none;
+}
+.favorite-container .favorite-food-content h2 {
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 5px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.favorite-container .favorite-food-content ol li p {
+  margin: 3px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.favorite-container .favorite-drinks-content ul li {
+  list-style: none;
+}
+.favorite-container .favorite-drinks-content h2 {
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.favorite-container .favorite-drinks-content ol li p {
+  margin: 3px;
+  padding: 5px;
+  text-align: start;
+  font-weight: 500;
+}
+
+.aboutme-container {
+  padding: 50px;
+}
+.aboutme-container-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-top: 5rem;
+}
+.aboutme-container-content .about-title {
+  padding: 10px;
+}
+.aboutme-container-content .about-title h2 {
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.aboutme-container-content .about-profile {
+  padding: 20px;
+}
+.aboutme-container-content .about-profile img {
+  max-width: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 5rem;
+}
+.aboutme-container-content .about-title ul li {
+  list-style: none;
+}
+.aboutme-container-content .about-title ul li p {
+  margin: 3px;
+  padding: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* main-footer-container */
+.main-footer-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+.main-footer-container p {
+  display: block;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 
+  Responsive
+*/
+
+@media (max-width: 600px) {
+  .navbar-container {
+    min-height: 50px;
+  }
+  .navbar-container .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-container ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    transition: all 500ms ease;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+  }
+  .navbar-container ul.active {
+    transform: translateX(0%);
+  }
+  .navbar-container .navbar-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-container .navbar-toggle i {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    min-height: 44px;
+    min-width: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    position: relative;
+  }
+  .main-content_about {
+    flex-direction: column;
+  }
+  .title-cafe-image img {
+    max-width: 100%;
+  }
+  .main-content_about {
+    flex-direction: column-reverse;
+  }
+  .jumbotron {
+    min-height: 400px;
+  }
+  .aboutme-container-content {
+    flex-direction: column-reverse;
+  }
+  .aboutme-container-content .about-title h2 {
+    margin-left: -20px;
+    font-size: 20px;
+  }
+  .aboutme-container-content .about-title ol li p {
+    font-size: 16px;
+  }
+  .aboutme-container-content .about-profile img {
+    max-width: 100%;
+  }
+  .favorite-container .favorite-food-content h2 {
+    font-size: 16px;
+  }
+  .favorite-container .favorite-drinks-content h2 {
+    font-size: 16px;
+  }
+  .title-cafe-galery h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 411px) {
+  .navbar-container ul {
+    top: 4vh !important;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-container ul {
+    top: 6vh;
+  }
+}
+@media (max-width: 414px) {
+  .navbar-container ul {
+    top: 6vh !important;
+  }
+}
+@media (max-width: 540px) {
+  .navbar-container ul {
+    top: 5vh !important;
+  }
+  .main-content_about .title-cafe-image img {
+    min-width: 100%;
+    height: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-container ul {
+    top: 8vh !important;
+  }
+}
